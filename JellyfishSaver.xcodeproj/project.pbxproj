@@ -7,14 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7BA997AD2B19F7D700A7BA9B /* JellyfishSaverView.h in Headers */ = {isa = PBXBuildFile; fileRef = 7BA997AC2B19F7D700A7BA9B /* JellyfishSaverView.h */; };
-		7BA997AF2B19F7D700A7BA9B /* JellyfishSaverView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BA997AE2B19F7D700A7BA9B /* JellyfishSaverView.m */; };
+		7BA997B62B19F82700A7BA9B /* JellyfishSaverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA997B52B19F82700A7BA9B /* JellyfishSaverView.swift */; };
+		7BA997B92B19F8FF00A7BA9B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA997B72B19F8FF00A7BA9B /* ContentView.swift */; };
+		7BA997BA2B19F8FF00A7BA9B /* Shaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 7BA997B82B19F8FF00A7BA9B /* Shaders.metal */; };
+		7BA997C02B1A002D00A7BA9B /* ScreenSaver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BA997BF2B1A002D00A7BA9B /* ScreenSaver.framework */; };
+		7BA997C12B1A014700A7BA9B /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BA997BD2B1A001700A7BA9B /* SwiftUI.framework */; };
+		7BA997C92B1A066B00A7BA9B /* DisplayLinkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA997C82B1A066B00A7BA9B /* DisplayLinkHandler.swift */; };
+		7BA997CC2B1A1E2000A7BA9B /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA997CB2B1A1E2000A7BA9B /* SettingsView.swift */; };
+		7BA997CE2B1A1E5700A7BA9B /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA997CD2B1A1E5700A7BA9B /* Store.swift */; };
+		7BA997D22B1A2A9800A7BA9B /* clamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA997D12B1A2A9800A7BA9B /* clamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		7BA997A92B19F7D700A7BA9B /* JellyfishSaver.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JellyfishSaver.saver; sourceTree = BUILT_PRODUCTS_DIR; };
-		7BA997AC2B19F7D700A7BA9B /* JellyfishSaverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JellyfishSaverView.h; sourceTree = "<group>"; };
-		7BA997AE2B19F7D700A7BA9B /* JellyfishSaverView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JellyfishSaverView.m; sourceTree = "<group>"; };
+		7BA997B52B19F82700A7BA9B /* JellyfishSaverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JellyfishSaverView.swift; sourceTree = "<group>"; };
+		7BA997B72B19F8FF00A7BA9B /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7BA997B82B19F8FF00A7BA9B /* Shaders.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = Shaders.metal; sourceTree = "<group>"; };
+		7BA997BD2B1A001700A7BA9B /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		7BA997BF2B1A002D00A7BA9B /* ScreenSaver.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ScreenSaver.framework; path = System/Library/Frameworks/ScreenSaver.framework; sourceTree = SDKROOT; };
+		7BA997C82B1A066B00A7BA9B /* DisplayLinkHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayLinkHandler.swift; sourceTree = "<group>"; };
+		7BA997CB2B1A1E2000A7BA9B /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		7BA997CD2B1A1E5700A7BA9B /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		7BA997D12B1A2A9800A7BA9B /* clamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = clamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -22,6 +36,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BA997C12B1A014700A7BA9B /* SwiftUI.framework in Frameworks */,
+				7BA997C02B1A002D00A7BA9B /* ScreenSaver.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -33,6 +49,7 @@
 			children = (
 				7BA997AB2B19F7D700A7BA9B /* JellyfishSaver */,
 				7BA997AA2B19F7D700A7BA9B /* Products */,
+				7BA997BC2B1A001700A7BA9B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -47,10 +64,24 @@
 		7BA997AB2B19F7D700A7BA9B /* JellyfishSaver */ = {
 			isa = PBXGroup;
 			children = (
-				7BA997AC2B19F7D700A7BA9B /* JellyfishSaverView.h */,
-				7BA997AE2B19F7D700A7BA9B /* JellyfishSaverView.m */,
+				7BA997B52B19F82700A7BA9B /* JellyfishSaverView.swift */,
+				7BA997B72B19F8FF00A7BA9B /* ContentView.swift */,
+				7BA997CB2B1A1E2000A7BA9B /* SettingsView.swift */,
+				7BA997D12B1A2A9800A7BA9B /* clamp.swift */,
+				7BA997CD2B1A1E5700A7BA9B /* Store.swift */,
+				7BA997C82B1A066B00A7BA9B /* DisplayLinkHandler.swift */,
+				7BA997B82B19F8FF00A7BA9B /* Shaders.metal */,
 			);
 			path = JellyfishSaver;
+			sourceTree = "<group>";
+		};
+		7BA997BC2B1A001700A7BA9B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7BA997BF2B1A002D00A7BA9B /* ScreenSaver.framework */,
+				7BA997BD2B1A001700A7BA9B /* SwiftUI.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -60,7 +91,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BA997AD2B19F7D700A7BA9B /* JellyfishSaverView.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +105,7 @@
 				7BA997A52B19F7D700A7BA9B /* Sources */,
 				7BA997A62B19F7D700A7BA9B /* Frameworks */,
 				7BA997A72B19F7D700A7BA9B /* Resources */,
+				7BA997CA2B1A0D7700A7BA9B /* Install */,
 			);
 			buildRules = (
 			);
@@ -96,6 +127,7 @@
 				TargetAttributes = {
 					7BA997A82B19F7D700A7BA9B = {
 						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
 					};
 				};
 			};
@@ -127,12 +159,40 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7BA997CA2B1A0D7700A7BA9B /* Install */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = Install;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "TARGET_COPY_PATH=\"/Users/$(whoami)/Library/Screen Savers\"\necho \"$TARGET_COPY_PATH/$WRAPPER_NAME\"\n\nif [ ! -f \"$TARGET_COPY_PATH/$WRAPPER_NAME\" ]\nthen\n  rm -rf \"$TARGET_COPY_PATH/$WRAPPER_NAME\"\nfi\n  \ncp -R \"$TARGET_BUILD_DIR/$WRAPPER_NAME\" \"$TARGET_COPY_PATH\"\nkillall kill WallpaperAgent \n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7BA997A52B19F7D700A7BA9B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7BA997AF2B19F7D700A7BA9B /* JellyfishSaverView.m in Sources */,
+				7BA997CC2B1A1E2000A7BA9B /* SettingsView.swift in Sources */,
+				7BA997BA2B19F8FF00A7BA9B /* Shaders.metal in Sources */,
+				7BA997D22B1A2A9800A7BA9B /* clamp.swift in Sources */,
+				7BA997C92B1A066B00A7BA9B /* DisplayLinkHandler.swift in Sources */,
+				7BA997CE2B1A1E5700A7BA9B /* Store.swift in Sources */,
+				7BA997B62B19F82700A7BA9B /* JellyfishSaverView.swift in Sources */,
+				7BA997B92B19F8FF00A7BA9B /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,18 +317,22 @@
 		7BA997B32B19F7D700A7BA9B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = EUKTZ7725R;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSPrincipalClass = JellyfishSaverView;
+				INFOPLIST_KEY_NSPrincipalClass = JellyfishSaver.JellyfishSaverView;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.skillbreak.JellyfishSaver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Debug;
@@ -276,18 +340,21 @@
 		7BA997B42B19F7D700A7BA9B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = EUKTZ7725R;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSPrincipalClass = JellyfishSaverView;
+				INFOPLIST_KEY_NSPrincipalClass = JellyfishSaver.JellyfishSaverView;
 				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.skillbreak.JellyfishSaver;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
 				WRAPPER_EXTENSION = saver;
 			};
 			name = Release;
