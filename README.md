@@ -4,6 +4,8 @@ A macOS screensaver written using SwiftUI Shaders. Draws some curves animated al
 
 You may specify how many “jellyfish”, the number of curves making up one jellyfish, and the distance between the curves.
 
+https://github.com/Eskils/JellyfishSaver/assets/26850613/51e38924-3027-4221-a530-1af2d09a560c
+
 ## Installation
 
 - Download the latest release
