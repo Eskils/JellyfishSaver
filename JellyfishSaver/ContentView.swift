@@ -31,15 +31,19 @@ struct ContentView: View {
     @State
     var angularSeparation: Float = 0.3
     
-    let metalLibraryURL = Bundle(for: JellyfishSaverView.self).url(forResource: "default", withExtension: "metallib")
+    let shaderLibrary = Bundle(for: JellyfishSaverView.self)
+        .url(forResource: "default", withExtension: "metallib")
+        .map { metalLibraryURL in
+            ShaderLibrary(url: metalLibraryURL)
+        }
     
     var body: some View {
         VStack {
             ZStack {
-                if let metalLibraryURL {
+                if let shaderLibrary {
                     Rectangle()
                         .visualEffect { content, geometryProxy in
-                            content.layerEffect(ShaderLibrary(url: metalLibraryURL).shadeFunction(
+                            content.layerEffect(shaderLibrary.shadeFunction(
                                 .float2(geometryProxy.size.width, geometryProxy.size.height),
                                 .float(t),
                                 .float(sections),
@@ -47,7 +51,7 @@ struct ContentView: View {
                                 .float(angularSeparation)
                             ), maxSampleOffset: .zero)
                         }
-                        .background(Color.red)
+                        .background(Color.clear)
                 }
             }
         }
